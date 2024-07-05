@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather API App - Santhosh Kosuru</title>
+    <script src="https://kit.fontawesome.com/97344c8ee3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="icon" href="./favicon-32x32.png">
+</head>
+<body>
+    <div class="container">
+        <div class="weather-input">
+            <div class="input-group">
+                <input type="text" name="location" id="user-location" placeholder="Search your location">
+                <select name="temperature" id="converter" class="converter">
+                    <option value="C">°C</option>
+                    <option value="F">°F</option>
+                </select>
+                <i class="fa-solid fa-magnifying-glass" onclick="findUserLocation()"></i>
+            </div>
+            <div class="weather-icon"></div>
+            <h2 class="temperature"></h2>
+            <div class="feelslike"></div>
+            <div class="description"></div>
+            <hr>
+            <div class="date"></div>
+            <div class="city"></div>
+        </div>
+        <div class="weather-output">
+            <h2 class="heading">Today's Highlight</h2>
+            <div class="highlight">
+                <div class="humidity">
+                    <p>Humidity</p>
+                    <i class="fa-solid fa-water"></i>
+                    <h2 id="HValue"></h2>
+                </div>
+                <div class="wind-speed">
+                    <p>Wind Speed</p>
+                    <i class="fa-solid fa-wind"></i>
+                    <h2 id="WValue"></h2>
+                </div>
+                <div class="sun">
+                    <span>
+                        <i class="fa-solid fa-sun"></i>
+                        <p><span id="SRValue"></span>Sunrise</p>
+                    </span>
+                    <span>
+                        <i class="fa-regular fa-sun"></i>
+                        <p><span id="SSValue"></span>Sunset</p>
+                    </span>
+                </div>
+                <div class="clouds">
+                    <p>Clouds</p>
+                    <i class="fa-solid fa-cloud"></i>
+                    <h2 id="CValue"></h2>
+                </div>
+                <div class="uv-index">
+                    <p>UV Index</p>
+                    <i class="fa-solid fa-bacon"></i>
+                    <h2 id="UVValue"></h2>
+                </div>
+                <div class="pressure">
+                    <p>Pressure</p>
+                    <i class="fa-solid fa-volcano"></i>
+                    <h2 id="PValue"></h2>
+                </div>
+            </div>
+            <br>
+            <h2 class="heading">This Week</h2>
+            <div class="forecast"></div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
